@@ -88,7 +88,7 @@ html, body {
   grid-area: sc;
   padding: 30px 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 150px);
+  grid-template-columns: repeat(auto-fit, 200px);
   grid-auto-rows: auto;
   grid-column-gap: 25px;
   grid-row-gap: 10px;
