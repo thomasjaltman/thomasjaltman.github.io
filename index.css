@@ -27,6 +27,7 @@ html, body {
 
 .site-navigation div {
   margin: 10px;
+  transition: all .2s ease-in-out;
 }
 
 .site-navigation div:last-child {
@@ -37,7 +38,10 @@ html, body {
   text-decoration: none;
   background-color: inherit;
   color: inherit;
-  transition: all .2s ease-in-out;
+}
+
+.site-navigation div:first-child:hover {
+  transform: none;
 }
 
 .site-navigation div:hover {
@@ -91,7 +95,7 @@ html, body {
   grid-template-columns: repeat(auto-fit, 200px);
   grid-auto-rows: auto;
   grid-column-gap: 25px;
-  grid-row-gap: 10px;
+  grid-row-gap: 15px;
   justify-content: space-between;
 }
 
@@ -109,6 +113,14 @@ html, body {
 .skills-content .card {
   border: 1px solid #ebecec;
   padding-top: 15px;
+  background-color: #f6f6f7;
+  transition: box-shadow 200ms ease-in-out;
+}
+
+.skills-content .card:hover {
+  position: relative;
+  top: -5px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
 }
 
 .skills-content img {
