@@ -7,11 +7,14 @@ html, body {
 
 .site-navigation {
   height: 60px;
+  width: 100%;
   background-color: #1d1e25;
   color: #bec6d5;
   display: -webkit-flex;
   display: flex;
   align-items: center;
+  position: fixed;
+  z-index: 99;
 }
 
 .nav-brand {
@@ -51,7 +54,9 @@ html, body {
   "s s s s s s s s s s s s"
   "x x x x x x x x x x x x"
   "e e e e e e e e e e e e"
-  "c c c c c c c c c c c c"
+  "c c c c c c c c c c c c";
+  position: relative;
+  top: 60px;
 }
 
 
@@ -82,6 +87,38 @@ html, body {
 .skills-content {
   grid-area: sc;
   padding: 30px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  grid-auto-rows: auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 10px;
+  justify-content: space-between;
+}
+
+.skills-content h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.skills-content p {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.skills-content .card {
+  border: 1px solid #ebecec;
+  padding-top: 15px;
+}
+
+.skills-content img {
+  max-width: 50px;
+  display: block;
+  margin: auto;
+}
+
+.skills-content h3 {
+  text-align: center;
 }
 
 .experience {
