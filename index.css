@@ -227,6 +227,73 @@ html, body {
 .education-content {
   grid-area: ec;
   padding: 30px 10px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 35px;
+}
+
+.education-content h1 {
+  text-align: center;
+  grid-column: 1 / -1;
+  margin: 25px 0;
+}
+
+.education-content p {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin: 0;
+}
+
+.tulane_metadata {
+  grid-column: 1 / 4;
+}
+
+.tulane_description {
+  grid-column: 4 / -1;
+}
+
+.tulane_description p {
+  text-align: left;
+}
+
+.tulane_metadata img {
+  max-width: 185px;
+  padding-right: 5px;
+}
+
+.tulane_metadata h3 {
+  margin: 0px;
+}
+
+.tulane_metadata h4 {
+  margin: 0px;
+}
+
+.usa_metadata {
+  grid-column: 1 / 4;
+}
+
+.usa_description {
+  grid-column: 4 / -1;
+}
+
+.usa_description p {
+  text-align: left;
+}
+
+.usa_metadata img {
+  max-width: 205px;
+  padding-right: 5px;
+}
+
+.usa_metadata h3 {
+  margin: 0px;
+}
+
+.usa_metadata h4 {
+  margin: 0px;
 }
 
 .contact {
