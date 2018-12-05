@@ -6,6 +6,10 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
+p {
+  font-size: 100%
+}
+
 .site-navigation {
   height: 60px;
   width: 100%;
