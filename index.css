@@ -102,7 +102,7 @@ html, body {
 .skills-content h1 {
   grid-column: 1 / -1;
   text-align: center;
-  margin: 10px 0px;
+  margin: 25px 0px;
 }
 
 .skills-content p {
@@ -146,8 +146,74 @@ html, body {
 .experience-content {
   grid-area: xc;
   padding: 30px 10px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 35px;
 }
 
+.experience-content h1 {
+  text-align: center;
+  grid-column: 1 / -1;
+  margin: 25px 0;
+}
+
+.experience-content p {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin: 0;
+}
+
+.cb_metadata {
+  grid-column: 1 / 4;
+}
+
+.cb_description {
+  grid-column: 4 / -1;
+}
+
+.cb_description p {
+  text-align: left;
+}
+
+.cb_metadata img {
+  max-width: 185px;
+  padding-right: 5px;
+}
+
+.cb_metadata h3 {
+  margin: 0px;
+}
+
+.cb_metadata h4 {
+  margin: 0px;
+}
+
+.aptify_metadata {
+  grid-column: 1 / 4;
+}
+
+.aptify_description {
+  grid-column: 4 / -1;
+}
+
+.aptify_description p {
+  text-align: left;
+}
+
+.aptify_metadata img {
+  max-width: 185px;
+  padding-right: 5px;
+}
+
+.aptify_metadata h3 {
+  margin: 0px;
+}
+
+.aptify_metadata h4 {
+  margin: 0px;
+}
 
 .education {
   grid-area: e;
