@@ -6,8 +6,24 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2.25em;
+}
+
+h4 {
+  font-size: 2.25em;
+}
+
 p {
-  font-size: 200%
+  font-size: 2em;
 }
 
 .site-navigation {
@@ -22,21 +38,14 @@ p {
   z-index: 99;
 }
 
-.nav-brand {
-  font-family: 'Press Start 2P', cursive;
+.site-navigation div {
+  display: none;
 }
 
 .site-navigation div:first-child {
-  margin-right: auto;
-}
-
-.site-navigation div {
-  margin: 10px;
-  transition: all .2s ease-in-out;
-}
-
-.site-navigation div:last-child {
-  margin-right: 20px;
+  display: contents;
+  text-align: center;
+  margin: auto;
 }
 
 .site-navigation a  {
@@ -45,13 +54,8 @@ p {
   color: inherit;
 }
 
-.site-navigation div:first-child:hover {
-  transform: none;
-}
-
-.site-navigation div:hover {
-  color: #fefefe;
-  transform: scale(1.1);
+.nav-brand {
+  font-family: 'Press Start 2P', cursive;
 }
 
 .wrapper {
@@ -106,13 +110,13 @@ p {
 
 .skills-content h1 {
   grid-column: 1 / -1;
-  text-align: center;
+  text-align: left;
   margin: 25px 0px;
 }
 
 .skills-content p {
   grid-column: 1 / -1;
-  text-align: center;
+  text-align: left;
 }
 
 .skills-content .card {
@@ -159,14 +163,14 @@ p {
 }
 
 .experience-content h1 {
-  text-align: center;
+  text-align: left;
   grid-column: 1 / -1;
   margin: 25px 0;
 }
 
 .experience-content p {
   grid-column: 1 / -1;
-  text-align: center;
+  text-align: left;
   margin: 0;
 }
 
@@ -226,7 +230,7 @@ p {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-  ". . ec ec ec ec ec ec ec ec . ."
+  "ec ec ec ec ec ec ec ec ec ec ec ec"
 }
 
 .education-content {
@@ -240,23 +244,23 @@ p {
 }
 
 .education-content h1 {
-  text-align: center;
+  text-align: left;
   grid-column: 1 / -1;
   margin: 25px 0;
 }
 
 .education-content p {
   grid-column: 1 / -1;
-  text-align: center;
+  text-align: left;
   margin: 0;
 }
 
 .tulane_metadata {
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
 }
 
 .tulane_description {
-  grid-column: 4 / -1;
+  grid-column: 1 / -1;
 }
 
 .tulane_description p {
@@ -277,11 +281,11 @@ p {
 }
 
 .usa_metadata {
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
 }
 
 .usa_description {
-  grid-column: 4 / -1;
+  grid-column: 1 / -1;
 }
 
 .usa_description p {
