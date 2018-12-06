@@ -76,7 +76,7 @@ p {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-  ". . bc bc bc bc bc bc bc bc . ."
+  "bc bc bc bc bc bc bc bc bc bc bc"
 }
 
 .bio-content {
@@ -90,7 +90,7 @@ p {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-  ". . sc sc sc sc sc sc sc sc . ."
+  "sc sc sc sc sc sc sc sc sc sc sc"
 }
 
 .skills-content {
@@ -145,7 +145,7 @@ p {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-  ". . xc xc xc xc xc xc xc xc . ."
+  "xc xc xc xc xc xc xc xc xc xc xc"
 }
 
 .experience-content {
@@ -171,11 +171,11 @@ p {
 }
 
 .cb_metadata {
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
 }
 
 .cb_description {
-  grid-column: 4 / -1;
+  grid-column: 1 / -1;
 }
 
 .cb_description p {
@@ -196,11 +196,11 @@ p {
 }
 
 .aptify_metadata {
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
 }
 
 .aptify_description {
-  grid-column: 4 / -1;
+  grid-column: 1 / -1;
 }
 
 .aptify_description p {
