@@ -963,6 +963,7 @@
     grid-column-gap: 25px;
     grid-row-gap: 15px;
     justify-content: space-between;
+
   }
 
   .hard-skills-content h1 {
@@ -979,8 +980,13 @@
   .hard-skills-content .card {
     border: 1px solid #ebecec;
     padding-top: 15px;
+    height: 100px;
+    width: 200px;
     background-color: hsl(0, 0%, 97%);
     transition: box-shadow 200ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .hard-skills-content .card:hover {
